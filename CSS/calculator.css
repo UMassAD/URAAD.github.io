@@ -233,6 +233,6 @@ input[type=number] {
     }
 
 	.sticky + .content {
-		padding-top: 2vh;
+		padding-top: 4vh;
 	}
 }

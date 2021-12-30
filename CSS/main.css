@@ -114,7 +114,10 @@ h2 {
 
 	.mission-statement {
 		top: 12%;
-		display: none;
+	}
+
+	.mission-statement h1 {
+		font-size: calc(30px + .5vw);
 	}
 	
 	.square {
