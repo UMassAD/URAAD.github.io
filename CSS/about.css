@@ -32,10 +32,10 @@ body {
 }
 
 .nav-button {
-    padding: 18px 10px;
+    padding: 18px 8px;
     text-align: center;
     color: var(--tertiary-color);
-    font-size: calc(12px + .5vw);
+    font-size: calc(16px + .5vw);
     text-decoration: none;
 }
 
@@ -160,4 +160,13 @@ p {
     h1, h2 {
         text-align: center;
     }
+
+    .header {
+        min-height: 100px;
+    }
+
+    .nav-button {
+        font-size: calc(18px + .5vw);
+    }
+
 }
