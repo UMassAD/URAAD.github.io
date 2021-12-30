@@ -169,4 +169,8 @@ p {
         font-size: calc(18px + .5vw);
     }
 
+    .sticky + .content {
+		padding-top: 2vh;
+	}
+
 }
