@@ -151,10 +151,13 @@ p {
 
     .profile-text {
         width: 70%;
+        padding-bottom: 30px;
     }
 
     .profile-photo {
+        margin-top: 30px;
         margin-bottom: 0;
+        height: calc(300px + 5vw);
     }
 
     h1, h2 {

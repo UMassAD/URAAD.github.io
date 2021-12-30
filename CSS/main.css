@@ -114,58 +114,59 @@ h2 {
 
 	.mission-statement {
 		top: 12%;
+		display: none;
 	}
 	
 	.square {
 		width: 30vh;
 		height: 30vh;
-		transform: translate(-50%,60%);
+		transform: translate(-50%,50%);
 		animation: 6s infinite forwards us_emphasize;
 		animation-delay: 2s;
 	}
 	.square:hover {
-		transform: translate(-50%,60%) scale(0.95);
+		transform: translate(-50%,50%) scale(0.95);
 	}
 	
 	#about-AD-square {
-		transform: translate(-50%,-70%);
+		transform: translate(-50%,-80%);
 		animation: 6s infinite forwards ad_emphasize;
 		animation-delay: 0s;
 	}
 	#about-AD-square:hover {
-		transform: translate(-50%,-70%) scale(0.95);
+		transform: translate(-50%,-80%) scale(0.95);
 	}
 	
 	#calculator-square {
-		transform: translate(-50%,170%);
+		transform: translate(-50%,180%);
 		animation: 6s infinite forwards calc_emphasize;
 		animation-delay: 4s;
 
 	}
 	#calculator-square:hover {
-		transform: translate(-50%,170%) scale(0.95);
+		transform: translate(-50%,180%) scale(0.95);
 	}
 
 	@keyframes us_emphasize {
-		0% {transform: translate(-50%,60%) scale(1);}
-		40% {transform: translate(-50%,60%) scale(1);}
-		50% {transform: translate(-50%,60%) scale(0.95);}
-		60% {transform: translate(-50%,60%) scale(1);}
-		100% {transform: translate(-50%,60%) scale(1);}
+		0% {transform: translate(-50%,50%) scale(1);}
+		40% {transform: translate(-50%,50%) scale(1);}
+		50% {transform: translate(-50%,50%) scale(0.95);}
+		60% {transform: translate(-50%,50%) scale(1);}
+		100% {transform: translate(-50%,50%) scale(1);}
 	}
 	@keyframes ad_emphasize {
-		0% {transform: translate(-50%,-70%) scale(1);}
-		40% {transform: translate(-50%,-70%) scale(1);}
-		50% {transform: translate(-50%,-70%) scale(0.95);}
-		60% {transform: translate(-50%,-70%) scale(1);}
-		100% {transform: translate(-50%,-70%) scale(1);}
+		0% {transform: translate(-50%,-80%) scale(1);}
+		40% {transform: translate(-50%,-80%) scale(1);}
+		50% {transform: translate(-50%,-80%) scale(0.95);}
+		60% {transform: translate(-50%,-80%) scale(1);}
+		100% {transform: translate(-50%,-80%) scale(1);}
 	}
 	@keyframes calc_emphasize {
-		0% {transform: translate(-50%,170%) scale(1);}
-		40% {transform: translate(-50%,170%) scale(1);}
-		50% {transform: translate(-50%,170%) scale(0.95);}
-		60% {transform: translate(-50%,170%) scale(1);}
-		100% {transform: translate(-50%,170%) scale(1);}
+		0% {transform: translate(-50%,180%) scale(1);}
+		40% {transform: translate(-50%,180%) scale(1);}
+		50% {transform: translate(-50%,180%) scale(0.95);}
+		60% {transform: translate(-50%,180%) scale(1);}
+		100% {transform: translate(-50%,180%) scale(1);}
 	}
 
 }
