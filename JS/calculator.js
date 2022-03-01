@@ -16,6 +16,18 @@ function myFunction() {
   }
 }
 
+// SIDEBAR
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+	document.getElementById("about-side-nav").style.width = "100%";
+}
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+	document.getElementById("about-side-nav").style.width = "0";
+}
+
 var WBPro = 19700.0;
 var SSOPro = 30323.0;
 var opDays = 365;

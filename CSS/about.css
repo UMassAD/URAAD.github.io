@@ -7,6 +7,7 @@
 
 body {
 	--primary-color: #990000; 
+    --primary-color-accent: #e00606; 
 	--secondary-color: #fdfcfc;
 	--tertiary-color: #353535;
     --quaternary-color: #ebebeb;
@@ -24,6 +25,7 @@ body {
     align-items: center;
     background-color: var(--secondary-color);
     overflow: hidden;
+    z-index: 999;
 }
 
 .logo {
@@ -114,6 +116,117 @@ p {
     text-align: justify;
 }
 
+/* Sidebar */
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 999; 
+    top: 0; 
+    left: 0;
+    background-color: var(--primary-color);
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.side-nav-content {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.side-nav-content img {
+    height: 25px;
+    filter: invert(100%);
+    margin-left: 20px;
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--secondary-color);
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.side-nav a:hover {
+    color: var(--tertiary-color);
+}
+
+.side-nav .side-nav-close {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 36px;
+}
+
+.side-nav-open {
+    display: none;
+}
+
+/* Timeline Page */
+
+.timeline-1, .timeline-2 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: var(--quaternary-color);
+}
+
+.timeline-2 {
+    background-color: var(--secondary-color);
+}
+
+.arrow-1, .arrow-2 {
+    position: relative;
+    width: 75px;
+    background-color: var(--primary-color);
+}
+.arrow-2 {
+    background-color: var(--primary-color-accent);
+}
+
+.arrow-cap-left, .arrow-cap-right {
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(to left bottom, var(--primary-color-accent) 50%, transparent 50%)
+}
+.arrow-cap-right {
+    left: 50%;
+    background: linear-gradient(to right bottom, var(--primary-color-accent) 50%, transparent 50%)
+}
+.arrow-2 .arrow-cap-left {
+    background: linear-gradient(to left bottom, var(--primary-color) 50%, transparent 50%)
+}
+.arrow-2 .arrow-cap-right {
+    background: linear-gradient(to right bottom, var(--primary-color) 50%, transparent 50%)
+}
+#final-arrow .arrow-cap-left {
+    top: 100%;
+    background: linear-gradient(to left bottom, var(--primary-color) 50%, transparent 50%)
+}
+#final-arrow .arrow-cap-right {
+    top: 100%;
+    background: linear-gradient(to right bottom, var(--primary-color) 50%, transparent 50%)
+}
+
+.timeline-text {
+    width: 60%;
+    padding: 30px 10px 30px 10px;
+    margin: 0 3vw 0 3vw;
+    text-align: left;
+    font-size: calc(12px + .5vw);
+}
+
 /* About AD Page */
 
 .article {
@@ -175,5 +288,21 @@ p {
     .sticky + .content {
 		padding-top: 4vh;
 	}
+
+    /* Side Nav */
+    .side-nav-open {
+        display: block;
+        margin-right: auto;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    #header a {
+        display: none;
+    }
+
+    #header {
+        flex-direction: row-reverse;
+    }
 
 }

@@ -41,7 +41,7 @@ body {
     height: 20vw;
 	top: 50%;
     left: 50%;
-	transform: translate(-50%,-65%);
+	transform: translate(-110%,-65%);
 	background-color: var(--primary-color);
     opacity: 1;
     cursor: pointer;
@@ -52,21 +52,28 @@ body {
 	transition: transform 1s ease;
 }
 .square:hover {
-	transform: translate(-50%,-65%) scale(0.95);
+	transform: translate(-110%,-65%) scale(0.95);
+}
+
+#our-work-square {
+	transform: translate(10%,-65%);
+}
+#our-work-square:hover {
+	transform: translate(10%,-65%) scale(0.95);
 }
 
 #about-AD-square {
-	transform: translate(-180%,-65%);
+	transform: translate(-230%,-65%);
 }
 #about-AD-square:hover {
-	transform: translate(-180%,-65%) scale(0.95);
+	transform: translate(-230%,-65%) scale(0.95);
 }
 
 #calculator-square {
-	transform: translate(80%,-65%);
+	transform: translate(130%,-65%);
 }
 #calculator-square:hover {
-	transform: translate(80%,-65%) scale(0.95);
+	transform: translate(130%,-65%) scale(0.95);
 }
 
 h1 {
@@ -94,37 +101,28 @@ h2 {
 	padding-bottom: 5%;
 }
 
+#wrench-icon {
+	height: 40%;
+	padding: 5% 5% 10% 5%;
+}
+
 
 @media only screen and (orientation: portrait) {
-	.layer {
-		height: 150%;
-	}
+	.layer {height: 180%;}
 
-    .logo {
-		height: 10%;
-	}
+    .logo {height: 10%;}
 
-	h1 {
-		font-size: 3vh;
-	}
-	
-	h2 {
-		font-size: 3vh;
-	}
+	h1 {font-size: 3vh;}
+	h2 {font-size: 3vh;}
 
-	.mission-statement {
-		top: 12%;
-	}
-
-	.mission-statement h1 {
-		font-size: calc(30px + .5vw);
-	}
+	.mission-statement {top: 12%;}
+	.mission-statement h1 {font-size: calc(30px + .5vw);}
 	
 	.square {
 		width: 30vh;
 		height: 30vh;
 		transform: translate(-50%,50%);
-		animation: 6s infinite forwards us_emphasize;
+		animation: 8s infinite forwards us_emphasize;
 		animation-delay: 2s;
 	}
 	.square:hover {
@@ -133,21 +131,30 @@ h2 {
 	
 	#about-AD-square {
 		transform: translate(-50%,-80%);
-		animation: 6s infinite forwards ad_emphasize;
+		animation: 8s infinite forwards ad_emphasize;
 		animation-delay: 0s;
 	}
 	#about-AD-square:hover {
 		transform: translate(-50%,-80%) scale(0.95);
 	}
 	
-	#calculator-square {
+	#our-work-square {
 		transform: translate(-50%,180%);
-		animation: 6s infinite forwards calc_emphasize;
+		animation: 8s infinite forwards work_emphasize;
 		animation-delay: 4s;
 
 	}
-	#calculator-square:hover {
+	#our-work-square:hover {
 		transform: translate(-50%,180%) scale(0.95);
+	}
+
+	#calculator-square {
+		transform: translate(-50%,310%);
+		animation: 8s infinite forwards calc_emphasize;
+		animation-delay: 6s;
+	}
+	#calculator-square:hover {
+		transform: translate(-50%,310%) scale(0.95);
 	}
 
 	@keyframes us_emphasize {
@@ -164,12 +171,19 @@ h2 {
 		60% {transform: translate(-50%,-80%) scale(1);}
 		100% {transform: translate(-50%,-80%) scale(1);}
 	}
-	@keyframes calc_emphasize {
+	@keyframes work_emphasize {
 		0% {transform: translate(-50%,180%) scale(1);}
 		40% {transform: translate(-50%,180%) scale(1);}
 		50% {transform: translate(-50%,180%) scale(0.95);}
 		60% {transform: translate(-50%,180%) scale(1);}
 		100% {transform: translate(-50%,180%) scale(1);}
+	}
+	@keyframes calc_emphasize {
+		0% {transform: translate(-50%,310%) scale(1);}
+		40% {transform: translate(-50%,310%) scale(1);}
+		50% {transform: translate(-50%,310%) scale(0.95);}
+		60% {transform: translate(-50%,310%) scale(1);}
+		100% {transform: translate(-50%,310%) scale(1);}
 	}
 
 }
