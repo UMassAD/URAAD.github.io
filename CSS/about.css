@@ -140,7 +140,7 @@ p {
 }
 
 .side-nav-content img {
-    height: 25px;
+    height: 4vh;
     filter: invert(100%);
     margin-left: 20px;
 }
@@ -148,7 +148,7 @@ p {
 .side-nav a {
     padding: 8px 8px 8px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 3vh;
     color: var(--secondary-color);
     display: block;
     transition: 0.3s;
@@ -160,13 +160,14 @@ p {
 }
 
 .side-nav .side-nav-close {
+    height: 4vh;
     position: absolute;
     top: 0;
     left: 5px;
     font-size: 36px;
 }
 
-.side-nav-open {
+.side-nav-open, .side-nav {
     display: none;
 }
 
@@ -222,7 +223,7 @@ p {
 .timeline-text {
     width: 60%;
     padding: 30px 10px 30px 10px;
-    margin: 0 3vw 0 3vw;
+    margin: 0 5vw 0 5vw;
     text-align: left;
     font-size: calc(12px + .5vw);
 }
@@ -273,23 +274,23 @@ p {
         height: calc(300px + 5vw);
     }
 
-    h1, h2 {
-        text-align: center;
-    }
+    h1, h2 {text-align: center;}
 
-    .header {
-        min-height: 100px;
-    }
+    .nav-button {font-size: calc(18px + .5vw);}
 
-    .nav-button {
-        font-size: calc(18px + .5vw);
-    }
+    .sticky + .content {padding-top: 8vh;}
 
-    .sticky + .content {
-		padding-top: 4vh;
-	}
+    .logo {height: 8vh;}
+
+    .side-nav-open {height: 4vh;}
+
+    .content {padding-top: 8vh;}
 
     /* Side Nav */
+
+    .side-nav {
+        display: block;
+    }
     .side-nav-open {
         display: block;
         margin-right: auto;
@@ -297,12 +298,7 @@ p {
         cursor: pointer;
     }
 
-    #header a {
-        display: none;
-    }
-
-    #header {
-        flex-direction: row-reverse;
-    }
+    #header a {display: none;}
+    #header {flex-direction: row-reverse;}
 
 }

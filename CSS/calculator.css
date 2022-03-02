@@ -287,7 +287,7 @@ input[type=number] {
     }
 
 	.sticky + .content {
-		padding-top: 4vh;
+		padding-top: 8vh;
 	}
 
     /* Side Nav */
