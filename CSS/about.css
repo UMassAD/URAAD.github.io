@@ -128,27 +128,27 @@ p {
     left: 0;
     background-color: var(--primary-color);
     overflow-x: hidden; 
-    padding-top: 60px; 
+    padding-top: 100px; 
     transition: 0.5s;
 }
 
 .side-nav-content {
-    height: 45px;
     display: flex;
+    padding: 16px 8px 16px 16px;
     flex-direction: row;
     align-items: center;
 }
 
 .side-nav-content img {
-    height: 4vh;
+    height: 6vh;
     filter: invert(100%);
     margin-left: 20px;
 }
 
 .side-nav a {
-    padding: 8px 8px 8px 16px;
+    padding-left: 32px;
     text-decoration: none;
-    font-size: 3vh;
+    font-size: 6vh;
     color: var(--secondary-color);
     display: block;
     transition: 0.3s;
@@ -164,7 +164,7 @@ p {
     position: absolute;
     top: 0;
     left: 5px;
-    font-size: 36px;
+    font-size: 100px;
 }
 
 .side-nav-open, .side-nav {
@@ -282,9 +282,7 @@ p {
 
     .logo {height: 8vh;}
 
-    .side-nav-open {height: 4vh;}
-
-    .content {padding-top: 8vh;}
+    .content {padding-top: 0vh;}
 
     /* Side Nav */
 
@@ -292,9 +290,10 @@ p {
         display: block;
     }
     .side-nav-open {
+        height: 4vh;
         display: block;
         margin-right: auto;
-        margin-left: 10px;
+        margin-left: 20px;
         cursor: pointer;
     }
 
